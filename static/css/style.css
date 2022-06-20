@@ -1,0 +1,116 @@
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #0088cc;
+}
+p,
+.table tbody tr td{
+    font-size: 13px;
+}
+/* Header */
+.navbar{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+/* Header End */
+/* ROW */
+.row{
+    display: flex;
+}
+.section-first{
+    flex-basis: 50%;
+}
+.section-second{
+    flex-basis: 50%;
+}
+/* ROW  END*/
+/* Section 1 */
+.section-header{
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+    margin-bottom: 17px;
+}
+.section-header h2 a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(56, 55, 55);
+    font-size: 22px;
+    font-weight: 700;
+}
+.section-header h2 a:hover{
+    color: #0088cc;
+    
+}
+
+/* Rating Top 10 */
+.container .new-tasks .table>tbody>tr:nth-of-type(odd)>*,
+.tab-pane .table>tbody>tr:nth-of-type(odd)>*{
+    background-color: #f9f9f9!important;
+}
+.nav-tabs{
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-item .nav-link{
+    color: #0088cc;
+}
+
+
+/* Rating Top 10 End */
+
+/* PAST EVENTS */
+.last-event-container h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+/* PAST EVENTS END */
+
+/* NEW TASKS */
+.new-tasks{
+    padding-bottom: 30px;
+}
+/* NEW TASKS END*/
+
+/* Rating Top 10 */
+.footer-row{
+    border-top: #ddd 1px solid;
+    display: flex;    
+    justify-content: space-between;
+    padding-top: 15px;
+}
+/* Rating Top 10 End */
+
+
+
+/* TASKS PAGE */
+.wrapper{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+table.table-tasks tbody tr:last-child{
+    border-bottom-style: hidden;
+}
+.table-tasks .thead-dark tr th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.table-tasks .thead-dark tr th{
+    color: #f9f9f9;
+    background-color: #343a40;
+    border-color: #454d55;
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+  
+}
+.btn-block,
+table.table-tasks tbody tr a.btn {
+    color: #f9f9f9;
+}
+
+/* TASKS PAGE END*/
