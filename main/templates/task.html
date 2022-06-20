@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block page_title %}Задачи{% endblock %}
+
+{% block content %}
+        <div class="wrapper">
+            <div class="card card-group card-custom mb-2">
+                <div class="card-body">
+                      <div class="progress" style="width: 25%">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="26"></div>
+                      </div>
+                      <br>
+                      <p>
+                        Вы заработали <b>0 приглашений</b>  и получили <b>5 / 26 баллов</b>  до следующего закрытого приглашения.
+                      </p>
+                      <a href="#" target="_blank">Узнать больше о приглашениях</a>
+                </div>
+              </div>
+        </div>
+       <div class="wrapper">
+           
+        <table class="table table-tasks">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Сложность (Баллы)</th>
+                    <th scope="col">Название</th>
+                    <th scope="col">Категория</th>
+                    <th scope="col">Выполнено</th>
+                    <th scope="col">&nbsp;</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                
+
+                {% for task in tasks %}
+                <tr>
+                    <td>{{ task.difficulty }} ( {{ task.number_of_flag }} / флаг)</td>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.category }}</td>
+                    <td style="font-weight: bold"> / 1</td>
+                    <td>
+                        <a href="task-1/" target="_blank" class="btn btn-info" role="button">Go</a> <a href="/ctf/hints/1">Подсказки</a> | <a href="/ctf/terminate/1">Рестарт</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+       </div>
+
+{% endblock %}

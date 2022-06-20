@@ -1,0 +1,307 @@
+        {% extends 'base.html' %}
+        {% block page_title %}KSTU CTF{% endblock %}
+        {% block content %}
+        <div class="row">
+          
+            <div class="section-first">
+
+                <!-- Top 10 Rating Start  -->
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2><a href="#">Рейтинг ТОП 10  <i class="fa fa-flag"></i></a></h2>
+                    </div>
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#rating_2021" type="button" role="tab" aria-controls="rating-tab-2021" aria-selected="true">2021</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#rating_2020" type="button" role="tab" aria-controls="rating-tab-2020" aria-selected="false">2020</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#rating_2019" type="button" role="tab" aria-controls="rating-tab-2019" aria-selected="false">2019</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active" id="rating_2021">
+                            <table class="table table-hover" id="table_rating_2021">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2">Место</th><th width="50%">Студент</th><th>Группа</th><th>Очки</th>
+                                </tr>
+                            
+                            <tr>
+                                <td class="place_ico leader"><i class="fa fa-star"></i></td></td>
+                                <td class="place">
+                                    <b>1</b>
+                                </td>
+                                <td>
+                                    <a href="/team/53802">perfect blue</a>
+                                </td>
+                                <td class="group">
+                                    <a href="/stats/2021/US">ПИ-1-19</a>
+                                </td>
+                                <td class="points">1409.969</td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="place_ico"><i class="fa fa-star"></i></td>
+                                <td class="place">
+                                    <b>2</b>
+                                </td>
+                                <td>
+                                    <a href="/team/42934">organizers</a>
+                                </td>
+                                <td class="country">
+                                    <a href="/stats/2021/CH">ИБ-2-20</a>
+                                </td>
+                                <td class="points">1004.940</td>
+                            </tr>
+                            <tr>
+                                <td class="place_ico"><i class="fa fa-star"></i></td>
+                                <td class="place">
+                                    <b>3</b>
+                                </td>
+                                <td>
+                                    <a href="/team/42934">organizers</a>
+                                </td>
+                                <td class="country">
+                                    <a href="/stats/2021/CH">ИБ-4-20</a>
+                                </td>
+                                <td class="points">1024.94</td>
+                            </tr>
+                            <tr>
+                                <td class="place_ico"></td>
+                                <td class="place">8</td>
+                                <td>
+                                    <a href="/team/586">Bushwhackers</a></td>
+                                    <td class="country">
+                                        <a href="/stats/2021/RU">ПИ-5-18</a>
+                                    </td>
+                                    <td class="points">793.028</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                    </div>
+                      <div class="tab-pane fade" id="rating_2020" role="tabpanel" aria-labelledby="rating-2020-tab">
+                        
+                      </div>
+                      <div class="tab-pane fade" id="rating_2019" role="tabpanel" aria-labelledby="rating-2019-tab">
+                      
+                      </div>
+                    </div>
+                    <p align="right"><a href="/stats/">Полный Рейтинг</a> | <a href="/rating-formula/">Формула Рейтинга</a></p>
+                </div>
+                <!-- Top 10 Rating End -->
+
+                <!-- UpCOMING EVENTS  -->
+                <div class="section-container">
+                    <div class="section-header">
+                        <h2><a href="#">Предстоящие Событии <span class="material-icons">calendar_month</span></a></h2>
+                    </div>
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="rating-tab-2021" data-bs-toggle="tab" data-bs-target="#rating_2021" type="button" role="tab" aria-controls="rating-tab-2021" aria-selected="true">Между ВУЗами</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Между Группами</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane active" id="rating_2021">
+                              <table class="table table-hover" id="table_rating_2021">
+                              <tbody>
+                                  <tr>
+                                    <th colspan="2">Формат</th>
+                                    <th width="50%">Название</th>
+                                    <th>Дата</th>
+                                    <th>Длительность</th>
+                                  </tr>
+                              <tr>
+                                  <td class="place_ico"></td>
+                                  <td class="place">5</td>
+                                  <td><a href="/team/109452">DiceGang</a></td>
+                                  <td class="country">
+                                     12-07-2021
+                                  </td>
+                                  <td class="points">870.104</td>
+                                </tr>
+                              <tr>
+                                  <td class="place_ico"></td>
+                                  <td class="place">6</td>
+                                  <td><a href="/team/16978">Balsn</a></td>
+                                  <td class="country">01-09-2021</td>
+                                  <td class="points">865.687</td>
+                              </tr>
+                              </tbody></table>
+                              </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        </div>
+                      </div>
+                </div>
+                <!-- UpCOMING EVENTS END -->
+
+            </div>
+           
+            <!-- Section Second Start-->
+            <div class="section-second">
+                 <!-- Past Events  -->
+                 <div class="section-container">
+                    <div class="section-header">
+                        <h2><a href="#">Прошедшие Событии <span class="material-icons">
+                            fact_check
+                            </span></a></h2>
+                    </div>
+                    <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="rating-tab-2021" data-bs-toggle="tab" data-bs-target="#rating_2021" type="button" role="tab" aria-controls="rating-tab-2021" aria-selected="true">Последние</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a href="#" class="nav-link" aria-selected="false">ВСЕ</a>
+                      </li>
+                    </ul>
+
+                    <div class="last-event-container">
+                        <h3>
+                            <span class="event-icon"></span>
+                            <a href="#" class="event-title"> 
+                                <span class="material-icons">web</span> KSTU CTF Мета Сплойт </a></h2>
+                        </h3>
+                        <p>Дек. 06, 2021 17:00 UTC | Онлайн | </p>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active" id="rating_2021">
+                            <table class="table table-hover" id="table_rating_2021">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2">Место</th>
+                                        <th width="50%">Команда</th>
+                                        <th>ВУЗ</th>
+                                        <th>Очки</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="place_ico"></td>
+                                        <td class="place">1</td>
+                                        <td>Белый Тигр</td>
+                                        <td>КСТУ</td>
+                                        <td>90.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="place_ico"></td>
+                                        <td class="place">1</td>
+                                        <td>Белый Тигр</td>
+                                        <td>КСТУ</td>
+                                        <td>90.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="place_ico"></td>
+                                        <td class="place">1</td>
+                                        <td>Белый Тигр</td>
+                                        <td>КСТУ</td>
+                                        <td>90.2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                      </div>
+                    </div>
+                    <div class="last-event-container">
+                        <h3>
+                            <span class="event-icon"></span>
+                            <a href="#" class="event-title">KSTU CTF Мета Сплойт </a></h2>
+                        </h3>
+                        <p>Дек. 06, 2021 17:00 UTC | Онлайн | </p>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane active" id="rating_2021">
+                            <table class="table table-hover" id="table_rating_2021">
+                                <tbody>
+                                    <tr>
+                                        <th colspan="2">Место</th>
+                                        <th width="50%">Команда</th>
+                                        <th>ВУЗ</th>
+                                        <th>Очки</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="place_ico"></td>
+                                        <td class="place">1</td>
+                                        <td>Белый Тигр</td>
+                                        <td>КСТУ</td>
+                                        <td>90.2</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      </div>
+                      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                      </div>
+                    </div>
+                    <p align="right"><a href="/stats/">общ. 5 команд</a> | <a href="/rating-formula/">Задачи</a></p>
+                </div>
+               <!-- Past Events END -->
+            </div>
+            <!-- Section Second End -->
+            <!--  -->
+            <!--  -->
+         </div>
+           <!-- LAST ADDED TASKS -->
+           <div class="new-tasks">
+            <div class="section-header">
+                <h2><a href="#">Новые Задачи <span class="material-icons">
+                    post_add
+                    </span></a></h2>
+            </div>
+            <table class="table table-hover" id="table_rating_2021">
+                <tbody>
+                    <tr>
+                        <th colspan="2">Задача</th><th width="50%">Формат</th><th>Дата Добавления</th><th>Балл</th>
+                    </tr>
+                    
+                <tr>
+                    <td class="place_ico"></td>
+                    <td class="place leader">
+                        <b>1</b>
+                    </td>
+                    <td>
+                        <a href="/team/53802">perfect blue</a>
+                    </td>
+                    <td class="group">
+                        <a href="/stats/2021/US">ПИ-1-19</a>
+                    </td>
+                    <td class="points">1409.969</td>
+                </tr>
+                
+                <tr>
+                    <td class="place_ico"></td>
+                    <td class="place">
+                        <b>2</b>
+                    </td>
+                    <td>
+                        <a href="/team/42934">organizers</a>
+                    </td>
+                    <td class="country">
+                        <a href="/stats/2021/CH">ИБ-2-20</a>
+                    </td>
+                    <td class="points">1004.940</td>
+                </tr>
+                <tr>
+                    <td class="place_ico"></td>
+                    <td class="place">8</td>
+                    <td>
+                        <a href="/team/586">Bushwhackers</a></td>
+                        <td class="country">
+                            <a href="/stats/2021/RU">ПИ-5-18</a>
+                        </td>
+                        <td class="points">793.028</td>
+                    </tr>
+                </tbody>
+            </table>
+           </div>
+           <!-- LAST ADDED TASKS END -->
+   
+ {% endblock %}

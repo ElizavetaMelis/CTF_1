@@ -1,0 +1,27 @@
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark justify-content-between" style="background-color: #3A3F44">
+            <ul class="navbar-nav mr-auto">
+                <span class="navbar-brand"><a href="/" style="color: #6BBD45; text-decoration: none;">KSTU</a> <a href="/" style="color: white; text-decoration: none;">CTF</a></span>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/howtoplay">Как играть?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/groups">Группы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'task' %}">Задачи</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/checkflags">Отправить флаг</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'register' %}">Войти/Регистрация <i class="fa fa-sign-in"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
